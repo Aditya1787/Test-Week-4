@@ -4,7 +4,6 @@ const app = express();
 
 app.use(cookieParser());
 
-// Visit Route
 app.get("/visit", (req, res) => {
   let visitCount = req.cookies.visitCount;
 
@@ -20,7 +19,6 @@ app.get("/visit", (req, res) => {
   });
 });
 
-// Reset Route
 app.get("/reset", (req, res) => {
   res.clearCookie("visitCount");
   res.json({ message: "Visit count reset" });

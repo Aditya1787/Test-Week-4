@@ -8,7 +8,6 @@ let students = [
   { id: 2, name: "Bob", age: 22, course: "Physics" }
 ];
 
-// CREATE Student
 app.post("/students", (req, res) => {
   const { name, age, course } = req.body;
   const newStudent = {
@@ -21,19 +20,16 @@ app.post("/students", (req, res) => {
   res.status(201).json(newStudent);
 });
 
-// GET All Students
 app.get("/students", (req, res) => {
   res.json(students);
 });
 
-// GET Student by ID
 app.get("/students/:id", (req, res) => {
   const student = students.find(s => s.id == req.params.id);
   if (!student) return res.status(404).json({ message: "Student not found" });
   res.json(student);
 });
 
-// UPDATE Student
 app.put("/students/:id", (req, res) => {
   const student = students.find(s => s.id == req.params.id);
   if (!student) return res.status(404).json({ message: "Student not found" });

@@ -1,6 +1,26 @@
 {
   "dependencies": {
     "cookie-parser": "^1.4.7",
-    "express": "^5.2.1"
-  }
+    "express": "^5.2.1",
+    "mongoose": "^9.2.1"
+  },
+  "name": "test-week-4",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000T\u0000e\u0000s\u0000t\u0000-\u0000W\u0000e\u0000e\u0000k\u0000-\u00004\u0000\r\u0000 \u0000",
+  "main": "question1.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aditya1787/Test-Week-4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aditya1787/Test-Week-4/issues"
+  },
+  "homepage": "https://github.com/Aditya1787/Test-Week-4#readme"
 }

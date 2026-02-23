@@ -5,7 +5,6 @@ app.use(express.json());
 
 let currentUser = null;
 
-
 app.post("/login", (req, res) => {
   const { role } = req.body;
 
